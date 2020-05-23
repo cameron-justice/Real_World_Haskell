@@ -87,3 +87,7 @@ letTest (x:xs) = let i = 4
 whereTest (x:xs) = x + i
   where i = 4
 
+letWhereTest xs = let pass = "info"
+                        in tail (xs ++ pass ++ postpass)
+                        where postpass = "loss"
+
